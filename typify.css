@@ -1,8 +1,8 @@
 /**
  * Typify CSS
- * Version: 1.0.0
+ * Version: 2.0.0
  * Author: TurboChat
- * Description: Styles for the Typify typing animation API.
+ * Description: Styles for the Typify typing animation API with enhanced customization options.
  */
 
 /* Base styles for Typify */
@@ -30,4 +30,34 @@
     50% {
         opacity: 0;
     }
+}
+
+/* Fade Animation */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.typify-animation-fade {
+    animation: fade-in ease-in-out;
+}
+
+/* Slide Animation */
+@keyframes slide-in {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.typify-animation-slide {
+    animation: slide-in ease-in-out;
+}
+
+/* Zoom Animation */
+@keyframes zoom-in {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.typify-animation-zoom {
+    animation: zoom-in ease-in-out;
 }
