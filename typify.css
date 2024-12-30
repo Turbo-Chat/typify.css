@@ -1,0 +1,33 @@
+/**
+ * Typify CSS
+ * Version: 1.0.0
+ * Author: TurboChat
+ * Description: Styles for the Typify typing animation API.
+ */
+
+/* Base styles for Typify */
+.typify-container {
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2em;
+    color: var(--text-color, #e0e0e0);
+}
+
+/* Cursor styling */
+.typify-cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: var(--cursor-color, #00ffea);
+    margin-left: 2px;
+    animation: blink 1s step-start infinite;
+    vertical-align: bottom;
+    height: 1em;
+}
+
+/* Blinking animation for cursor */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
